@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">To Load Data</p>
+
+    <button onclick="loadData()">Push</button>
+
+    <script>
+        function loadData() {
+            var xhtp = new XMLHttpRequest();
+
+            xhtp.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    document.write(this.responseText);
+                }
+            };
+
+            xhtp.open('GET',"cnthServer.txt",true);
+            xhtp.send();
+        }
+    </script>
+</body>
+</html>

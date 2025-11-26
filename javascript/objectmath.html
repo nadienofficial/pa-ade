@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function s(){
+        let num = document.getElementById("satu").value;
+            document.write("<br>" + Math.abs(num))
+            document.write("<br>" + Math.ceil(num))
+            document.write("<br>" + Math.floor(num))
+            document.write("<br>" + Math.round(num))
+            document.write("<br>" + Math.trunc(num))
+    }
+</script>
+<body>
+    <form>
+        <div class="">
+            <label>masukan angka</label><br>
+            <input type="text" id="satu" class="form-control"><br>
+            <button onclick="s()" class="btn-outline-primary">submit</button>
+        </div>
+    </form>
+</body>
+</html>

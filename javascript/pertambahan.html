@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<script>
+    function tambah() {
+        let bil1 = document.getElementsByName('bilangan_satu')[0].value;
+        let bil2 = document.getElementsByName('bilangan_kedua')[0].value;
+        let hasil = parseFloat(bil1) + parseFloat(bil2);
+        alert(hasil);
+    }
+</script>
+<body>
+    <label for="">Angka 1</label><br>
+    <input type="number" name="bilangan_satu"><br><br>
+    <label for="">Angka 2</label><br>
+    <input type="number" name="bilangan_kedua"><br>
+    <button onclick="tambah()">Kirim</button>
+</body>
+</html>
