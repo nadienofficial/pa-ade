@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: aqua;
+    }
+
+    .container {
+        background-color: lightgreen;
+        margin: 0 auto;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 4px 8px 8px grey;
+        display: flex;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <form action="">
+            <label for="">Angka 1</label><br>
+            <input type="number" id="a"><br><br>
+            <label for="">Angka 2</label><br>
+            <input type="number" id="b"><br><br>
+            <label for="">ngka 3</label><br>
+            <input type="number" id="c"><br>
+            <input type="submit" onclick="hitung()">
+        </form>
+    </div>
+
+    <script>
+        function hitung() {
+            let num1 = Number(document.getElementById('a').value);
+            let num2 = Number(document.getElementById('b').value);
+            let num3 = Number(document.getElementById('c').value);
+
+            let all = [num1, num2, num3];
+
+            let besar = Math.max(...all);
+            let kecil = Math.min(...all);
+
+            alert("Terbesar: " + besar + "\nTerkecil: " + kecil);
+            document.write("Terbesar: " + besar + "\nTerkecil: " + kecil);
+        }
+    </script>
+</body>
+</html>
