@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">
+        <img src="gilangproduct.jpg" alt="fotoprofil" class="foto">
+        <p class="nama">Nama: Nadien</p>
+        <p class="jurusan">Jurusan: Rpl</p>
+    </div>
+
+    <script>
+        let card = document.getElementsByClassName('card')[0];
+        let foto = document.getElementsByClassName('foto')[0];
+        let name = document.getElementsByClassName('nama')[0];
+        let jurusan = document.getElementsByClassName('jurusan')[0];
+
+        card.style.backgroundColor = "lightblue";
+        card.style.width = "250px";
+        card.style.height = "150px";
+        card.style.boxShadow = "4px 2px grey"
+        card.style.margin = "0 auto";
+        card.style.textAlign = "center";
+        card.style.fontFamily = "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif";
+        card.style.padding = "5px"
+        card.style.borderRadius = "5px"
+
+        foto.style.width = "70px";
+        foto.style.height = "50px";
+        foto.style.marginTop = "10px";
+        foto.style.borderRadius = "50px"
+    </script>
+</body>
+</html>
