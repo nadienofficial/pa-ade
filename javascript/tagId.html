@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function nama() {
+        var yrnm = document.getElementById("my").value;
+        var yrag = parseInt(document.getElementById("mage").value);
+        var yunm = document.getElementById("you").value;
+        var yuag = parseInt(document.getElementById("yage").value);
+        
+        if (yrag > yuag) {
+            hasil = "Anda lebih tua";
+        } else if (yrag < yuag) {
+            hasil = "Anda lebih muda";
+        } else {
+            hasil = "Anda sama umur";
+        }
+
+        alert("Nama: " + yrnm + "\nUsia: " + yrag + "\nNama: " + yunm + "\nUsia: " + yuag + "\n" + hasil);
+    }
+</script>
+<body>
+    <h1>Formulir Nama</h1>  
+    <form action="">
+        <label for="">Nama</label><br>
+        <input type="text" id="my"><br><br>
+        <label for="">Usia Anda</label><br>
+        <input type="number" id="mage"><br><br>
+        <label for="" id="">Nama Teman</label><br>
+        <input type="text" id="you"><br><br>
+        <label for="">Usia teman</label><br>
+        <input type="number" id="yage"><br><br>
+        <button type="button" onclick="nama()">Kirim</button>
+    </form>
+</body>
+</html>

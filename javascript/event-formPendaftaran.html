@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="pendaftaran">
+        <label for="no">Nomor:</label><br>
+        <input type="number" id="no" placeholder="Input Number"><br><br>
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" placeholder="Input Name"><br><br>
+        <label for="kelas">kelas:</label><br>
+        <input type="number" id="kelas" placeholder="Input Kelas"><br><br>
+        <label for="jurusan">Jurusan:</label><br>
+        <input type="text" id="jurusan" placeholder="Input Jurusan"><br><br>
+
+        <div id="massage" style="display: none; background: lightgreen;">
+            Masuk Berhasil
+        </div>
+        <button type="submit">Masuk</button>
+        <button type="reset">Ulang</button>
+    </form>
+
+    <script>
+        const massage = document.getElementById('massage');
+        const form = document.querySelector('form');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            massage.style.display = 'flex';
+        });
+
+        form.addEventListener('reset', function() {
+            massage.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

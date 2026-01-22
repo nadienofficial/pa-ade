@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="info"></div>
+    <label for="buah">Pilih Buah:</label>
+    <select id="buah">
+        <option value="">-- Pilih Buah --</option>
+        <option value="apel">Apel</option>
+        <option value="pisang">Pisang</option>
+        <option value="jeruk">Jeruk</option>
+    </select>
+
+    <script>
+        let select = document.getElementById('buah');
+        let info = document.getElementById('info');
+
+        select.addEventListener('change', function() {
+            info.textContent = "Buah yang dipilih: " + select.value;
+        });
+    </script>
+</body>
+</html>
