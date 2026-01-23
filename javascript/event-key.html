@@ -11,20 +11,20 @@
     <h1 id="keyup"></h1>
 
     <script>
-        const keydown = document.getElementById('keydown');
-        const pressed = document.getElementById('pressed');
-        const keyup = document.getElementById('keyup');
+        let keydown = document.getElementById("keydown");
+        let pressed = document.getElementById("pressed");
+        let keyup = document.getElementById("keyup");
 
-        document.addEventListener('keydown', function(event) {
-            keydown.innerText = `Tombol ditekan: ${event.key}`;
+        document.addEventListener("keydown", function(event) {
+            keydown.innerText = `keydown: ${event.key}`;
         });
 
-        document.addEventListener('keypress', function(event) {
-            pressed.innerText = `Tombol ditekan dan dilepas: ${event.key}`;
+        document.addEventListener("keypress", function(event) {
+            pressed.innerText = `keypress: ${event.key}`;
         });
 
-        document.addEventListener('keyup', function(event) {
-            keyup.innerText = `Tombol dilepas: ${event.key}`;
+        document.addEventListener("keyup", function(event) {
+            keyup.innerText = `keyup: ${event.key}`;
         });
     </script>
 </body>

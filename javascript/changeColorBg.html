@@ -4,28 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        button {
-            padding: 10px 20px;
-            margin: 10px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
 </head>
+<style>
+    button {
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+</style>
 <body>
     <button id="btn-hover">Hover</button>
 
     <script>
         const btn = document.getElementById('btn-hover');
         
-        // Saat mouse diarahkan ke button - warna biru
         btn.addEventListener('mouseenter', function() {
             btn.style.backgroundColor = 'blue';
             btn.style.color = 'white';
         });
         
-        // Saat mouse keluar dari button - warna merah
         btn.addEventListener('mouseleave', function() {
             btn.style.backgroundColor = 'red';
             btn.style.color = 'white';
