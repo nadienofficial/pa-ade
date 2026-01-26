@@ -9,14 +9,21 @@
     <h1 id="keydown"></h1>
     <h1 id="pressed"></h1>
     <h1 id="keyup"></h1>
+    <h1 id="output"></h1>
 
     <script>
         let keydown = document.getElementById("keydown");
         let pressed = document.getElementById("pressed");
         let keyup = document.getElementById("keyup");
+        let output = document.getElementById("output");
 
         document.addEventListener("keydown", function(event) {
             keydown.innerText = `keydown: ${event.key}`;
+            
+            // Jika huruf 'q' atau 'Q' ditekan
+            if (event.key.toLowerCase() === 'q') {
+                output.innerText = "i love you";
+            }
         });
 
         document.addEventListener("keypress", function(event) {
