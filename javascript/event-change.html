@@ -6,21 +6,17 @@
     <title>Document</title>
 </head>
 <body>
+    <input type="text" id="inpt" placeholder="Type something..."><br>
+    <input type="checkbox" id="cek"> Ganti
     <div id="info"></div>
-    <label for="buah">Pilih Buah:</label>
-    <select id="buah">
-        <option value="">-- Pilih Buah --</option>
-        <option value="apel">Apel</option>
-        <option value="pisang">Pisang</option>
-        <option value="jeruk">Jeruk</option>
-    </select>
-
+    
     <script>
-        let select = document.getElementById('buah');
-        let info = document.getElementById('info');
+        const inpt = document.getElementById('inpt');
+        const info = document.getElementById('info');
+        const checkBox = document.getElementById('cek');
 
-        select.addEventListener('change', function() {
-            info.textContent = "Buah yang dipilih: " + select.value;
+        inpt.addEventListener('change', function() {
+            info.innerText = 'input Ganti Jadi: ' + inpt.value;   
         });
     </script>
 </body>
